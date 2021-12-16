@@ -2,8 +2,7 @@
 
 This repository serves three purposes:
 
-1. Document the simulation design process used in our work __*[Citation missing,
-   paper under revision]*__.
+1. Document the simulation design process used in our work __Evaluation of Existing Methods for High-Order Epistasis Detection__[1].
 2. Publish our developed data sets, allowing other researchers to use the same
    data.
 3. Ensure that our results are reproducible by any other scientist.
@@ -17,7 +16,7 @@ that, a collection of data sets was created with the intention of providing a
 wide variety of population characteristics resembling real human traits, on
 which the different methods will be evaluated.
 
-All our simulation was carried out using [GAMETES][][1], the most used epistasis
+All our simulation was carried out using [GAMETES][][2], the most used epistasis
 simulation package in recent literature. Our simulation includes both epistasis
 with marginal effects and with no marginal effects. Simulation in GAMETES can be
 summarized in three steps:
@@ -36,7 +35,7 @@ heritabilities of 0.10, 0.25, 0.50 and 0.80, and prevalences above 1E-06.
 
 GAMETES can create penetrance tables describing interactions following no
 epistasis model and showing no marginal effects. Therefore, to generate
-penetrance tables following a specific epistasis model, [Toxo][][2] was used.
+penetrance tables following a specific epistasis model, [Toxo][][3] was used.
 Toxo is a MATLAB library capable of calculating penetrance tables of any
 bivariate epistasis model under certain conditions. In this study we decided to
 use the additive and threshold models proposed my Machini *et al.* in [3] for
@@ -258,12 +257,17 @@ https://github.com/UDC-GAC/epistasis-simulation-data/trunk/datasets/epistasis/no
 
 ## References
 
-[1] Urbanowicz, R.J., Kiralis, J., Sinnott-Armstrong, N.A. et al. GAMETES: a
+[1] C. Ponte-Fernandez, J. Gonzalez-Dominguez, A. Carvajal-Rodriguez and M. J. Martin.
+Evaluation of Existing Methods for High-Order Epistasis Detection. IEEE/ACM 
+Transactions on Computational Biology and Bioinformatics.
+https://doi.org/10.1109/TCBB.2020.3030312
+
+[2] Urbanowicz, R.J., Kiralis, J., Sinnott-Armstrong, N.A. et al. GAMETES: a
 fast, direct algorithm for generating pure, strict, epistatic models with random
 architectures. BioData Mining 5, 16 (2012).
 https://doi.org/10.1186/1756-0381-5-16
 
-[2] Ponte-Fernández, C., González-Domínguez, J., Carvajal-Rodríguez, A. et al.
+[3] Ponte-Fernández, C., González-Domínguez, J., Carvajal-Rodríguez, A. et al.
 Toxo: a library for calculating penetrance tables of high-order epistasis
 models. BMC Bioinformatics 21, 138 (2020).
 https://doi.org/10.1186/s12859-020-3456-3
